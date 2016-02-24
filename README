@@ -1,0 +1,30 @@
+# PLUGIN_NAME
+[![npm version][npm-image]][npm-url]
+
+> PLUGIN_INFO.
+
+## Installation
+`npm i PLUGIN_NAME --save-dev`
+
+## Usage
+[Postxml]
+
+## Example
+
+### Input
+```html
+
+```
+
+### Output
+```html
+
+```
+
+## Licence
+MIT
+
+[PostXML]: https://github.com/postxml/postxml
+
+[npm-url]: https://www.npmjs.org/package/PLUGIN_NAME
+[npm-image]: http://img.shields.io/npm/v/PLUGIN_NAME.svg?style=flat-square
