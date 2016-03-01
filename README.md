@@ -11,12 +11,12 @@
 
 ## Options
 ### cwd
-**Directory of parsing file. It is needed for images' urls.**<br>
+**Assets (images/styles) file path**<br>
 Type: `String`<br>
 Default: `''`
 
 ### round
-**Enable rounding sizes**<br>
+**Enable images dimensions rounding**<br>
 Type: `String`<br>
 Default: `true`
 
@@ -27,7 +27,10 @@ Default: `true`
 <html><head><link rel="stylesheet" href="style.css"></head><img src="image.png"></html>
 ```
 
-style.css
+###### image.png
+[image.png]('/test/image.png')
+
+###### style.css
 ```css
 body {
   background-color: #FFF;
@@ -42,7 +45,6 @@ body {
 ## Licence
 MIT
 
-[PostXML]: https://github.com/rkazakov/postxml
-
-[npm-url]: https://www.npmjs.org/package/postxml-image-size
-[npm-image]: http://img.shields.io/npm/v/postxml-image-size.svg?style=flat-square
+[PostXML]: https://github.com/postxml/postxml
+[npm-url]: https://www.npmjs.org/package/postxml-amp
+[npm-image]: http://img.shields.io/npm/v/postxml-amp.svg?style=flat-square
