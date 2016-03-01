@@ -28,7 +28,7 @@ Default: `true`
 ```
 
 ###### image.png
-[image.png]('/test/image.png')
+[image.png](/test/image.png)
 
 ###### style.css
 ```css
