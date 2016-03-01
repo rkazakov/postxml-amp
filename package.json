@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "chai": "^3.3.0",
+    "clean-css": "^3.4.10",
     "gulp": "^3.9.0",
     "gulp-eslint": "^1.0.0",
     "gulp-mocha": "^2.1.3",
