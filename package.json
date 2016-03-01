@@ -1,39 +1,42 @@
 {
-	"name": "postxml-amp",
-	"version": "0.1.0",
-	"description": "PostXML plugin to convert plain HTML to Google Accelerated Mobile Pages (AMP)",
-	"main": "index.js",
-	"devDependencies": {
-		"chai": "^3.3.0",
-		"gulp": "^3.9.0",
-		"gulp-eslint": "^1.0.0",
-		"gulp-mocha": "^2.1.3",
-		"postxml": "^0.2.4"
-	},
-	"scripts": {
-		"test": "mocha",
-		"lint": "jshint . && jscs ."
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/rkazakov/postxml-amp.git"
-	},
-	"keywords": [
-		"html",
-		"plugin",
-		"postxml",
-		"transform",
-		"amp",
-		"amp-img",
-		"amp-video"
-	],
-	"author": {
-		"name": "rkazakov",
-		"email": "ruslan.kazakov@gmail.com"
-	},
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/rkazakov/postxml-amp/issues"
-	},
-	"homepage": "https://github.com/rkazakov/postxml-amp#readme"
+  "name": "postxml-amp",
+  "version": "0.2.0",
+  "description": "PostXML plugin to convert plain HTML to Google Accelerated Mobile Pages (AMP)",
+  "main": "index.js",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "clean-css": "^3.4.10",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^1.1.1",
+    "gulp-mocha": "^2.2.0",
+    "image-size": "^0.4.0",
+    "postxml": "^0.2.9",
+    "sync-request": "^3.0.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "jshint . && jscs ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkazakov/postxml-amp.git"
+  },
+  "keywords": [
+    "html",
+    "plugin",
+    "postxml",
+    "transform",
+    "amp",
+    "amp-img",
+    "amp-video"
+  ],
+  "author": {
+    "name": "rkazakov",
+    "email": "ruslan.kazakov@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rkazakov/postxml-amp/issues"
+  },
+  "homepage": "https://github.com/rkazakov/postxml-amp#readme"
 }
