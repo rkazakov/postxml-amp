@@ -1,5 +1,6 @@
 # postxml-amp
 [![npm version][npm-image]][npm-url]
+[![Downloads Stats][npm-downloads]][npm-url]
 
 > [PostXML] plugin to convert plain HTML to Google Accelerated Mobile Pages (AMP).
 
@@ -47,4 +48,5 @@ MIT
 
 [PostXML]: https://github.com/postxml/postxml
 [npm-url]: https://www.npmjs.org/package/postxml-amp
-[npm-image]: http://img.shields.io/npm/v/postxml-amp.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/postxml-amp.svg?style=flat-square
+[npm-downloads]: https://img.shields.io/npm/dm/postxml-amp.svg?style=flat-square
