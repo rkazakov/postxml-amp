@@ -43,8 +43,18 @@ body {
 <html amp=""><head><style amp-custom="">body{background-color:#FFF}</style></head><amp-img src="image.png" width="600" height="400"></amp-img></html>
 ```
 
+## Release History
+* 0.2.1
+    * ADD: inline styles
+    * ADD: amp-img tag
+    * ADD: amp-video tag
+    * ADD: unit tests
+* 0.1.0
+    * ADD: AMP HTML tag
+		* Work in progress
+
 ## Licence
-MIT
+MIT (c) Ruslan Kazakov
 
 [PostXML]: https://github.com/postxml/postxml
 [npm-url]: https://www.npmjs.org/package/postxml-amp
