@@ -44,6 +44,9 @@ body {
 ```
 
 ## Release History
+* 0.2.2
+    * ADD: meta tag charset
+    * ADD: AMP library script tag
 * 0.2.1
     * ADD: inline styles
     * ADD: amp-img tag
