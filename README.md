@@ -44,17 +44,20 @@ body {
 ```
 
 ## Release History
+* 0.2.3
+	* ADD: meta tag viewport
+	* ADD: style amp-boilerplate
 * 0.2.2
-    * ADD: meta tag charset
-    * ADD: AMP library script tag
+  * ADD: meta tag charset
+  * ADD: AMP library script tag
 * 0.2.1
-    * ADD: inline styles
-    * ADD: amp-img tag
-    * ADD: amp-video tag
-    * ADD: unit tests
+  * ADD: inline styles
+  * ADD: amp-img tag
+  * ADD: amp-video tag
+  * ADD: unit tests
 * 0.1.0
-    * ADD: AMP HTML tag
-    * Work in progress
+  * ADD: AMP HTML tag
+  * Work in progress
 
 ## Licence
 MIT (c) Ruslan Kazakov
