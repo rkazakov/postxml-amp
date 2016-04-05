@@ -1,6 +1,6 @@
 {
   "name": "postxml-amp",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "PostXML plugin to convert plain HTML to Google Accelerated Mobile Pages (AMP)",
   "main": "index.js",
   "devDependencies": {
