@@ -5,27 +5,34 @@
 > [PostXML] plugin to convert plain HTML to Google Accelerated Mobile Pages (AMP).
 
 ## Installation
-`npm install postxml-amp --save-dev`
+```sh
+npm install postxml-amp --save-dev
+```
 
 ## Usage
 [Postxml]
 
 ## Options
 ### cwd
-**Assets (images/styles) file path**<br>
-Type: `String`<br>
+**Assets (images/styles) file path**
+Type: `String`
 Default: `''`
 
 ### round
-**Enable images dimensions rounding**<br>
-Type: `String`<br>
+**Enable images dimensions rounding**
+Type: `String`
 Default: `true`
 
 ## Example
 
 ### Input
 ```html
-<html><head><link rel="stylesheet" href="style.css"></head><img src="image.png"></html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<img src="image.png">
+</html>
 ```
 
 ###### image.png
@@ -34,17 +41,28 @@ Default: `true`
 ###### style.css
 ```css
 body {
-  background-color: #FFF;
+  background-color: #fff;
 }
 ```
 
 ### Output
 ```html
-<html amp=""><head><style amp-custom="">body{background-color:#FFF}</style></head><amp-img src="image.png" width="600" height="400"></amp-img></html>
+<html amp="">
+	<head>
+		<style amp-custom="">body{background-color:#fff}</style>
+	</head>
+	<amp-img src="image.png" width="600" height="400"></amp-img>
+</html>
 ```
 
 ## Release History
 
+* 0.2.6
+	* UPDATE: head tag charset order
+	* UPDATE: remove invalid img tag
+	* UPDATE: unit tests
+	* UPDATE: readme documentation
+	* UPDATE: package.json
 * 0.2.4
 	* UPDATE: package.json
 * 0.2.3
