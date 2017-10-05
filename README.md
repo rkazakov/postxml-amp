@@ -1,6 +1,7 @@
 # postxml-amp
 [![npm version][npm-image]][npm-url]
 [![Downloads Stats][npm-downloads]][npm-url]
+[![Known Vulnerabilities](https://snyk.io/test/github/rkazakov/postxml-amp/badge.svg)](https://snyk.io/test/github/rkazakov/postxml-amp)
 
 > [PostXML] plugin to convert plain HTML to Google Accelerated Mobile Pages (AMP).
 
