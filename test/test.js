@@ -1,7 +1,7 @@
 const path = require('path');
-const assert = require('./assertion');
+const assert = require('./assert');
 
-describe('postxml-amp', function() {
+describe('postxml-amp', () => {
 
 	describe('html amp tag', function() {
 
