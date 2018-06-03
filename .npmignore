@@ -1,6 +1,4 @@
 node_modules/
 test/
 npm-debug.log
-.editorconfig
-.jscsrc
-.jshintignore
+.eslintrc
