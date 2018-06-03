@@ -18,8 +18,9 @@
   ],
   "license": "MIT",
   "scripts": {
-    "test": "mocha",
-    "lint": "jshint . && jscs ."
+    "lint": "jshint . && jscs .",
+    "test": "node_modules/.bin/jest",
+    "test:watch": "node_modules/.bin/jest --watchAll"
   },
   "repository": {
     "type": "git",
