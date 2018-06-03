@@ -14,7 +14,9 @@
     "transform",
     "amp",
     "amp-img",
-    "amp-video"
+    "amp-video",
+    "amp-youtube",
+    "amp-analytics"
   ],
   "license": "MIT",
   "scripts": {

@@ -1,4 +1,5 @@
 const fs = require('fs');
+const url = require('url');
 const request = require('request');
 const sizeOf = require('image-size');
 const CleanCss = require('clean-css');
@@ -7,6 +8,8 @@ module.exports = (options) => {
   const tags = {
     amp: ['img', 'video'],
   };
+
+  let youtube = false;
 
   const cheerioOptions = options || {
     cwd: options.cwd || '',
@@ -31,6 +34,37 @@ module.exports = (options) => {
     $('head meta[charset="utf-8"]').remove();
     $('head meta[charset="UTF-8"]').remove();
     $('head').prepend('<meta charset="utf-8">');
+
+    /* google analytics */
+    $('script').each((index, element) => {
+      const src = $(element).attr('src');
+      if (src) {
+        const trackingId = src.match(/\bUA-\d{4,10}-\d{1,4}\b/);
+        if (trackingId) {
+          $(element).remove();
+          $('head').prepend('<script async custom-element="amp-analytics"src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>');
+          $('body').append(`<amp-analytics type="googleanalytics">
+            <script type="application/json">
+              { "vars": {
+                  "account": "${trackingId}"
+                },
+                "triggers": {
+                  "trackPageview": {
+                    "on": "visible",
+                    "request": "pageview"
+                  }
+                }
+              }
+            </script>
+          </amp-analytics>`);
+        }
+      }
+      const scriptContent = $(element).html();
+      const htmlScriptContent = scriptContent.match(/function gtag\(\){dataLayer\.push\(arguments\);}/);
+      if (scriptContent && htmlScriptContent) {
+        $(element).remove();
+      }
+    });
 
     /* meta viewport */
     if ($('head meta[content="width=device-width,minimum-scale=1,initial-scale=1"]').length === 0) {
@@ -96,6 +130,27 @@ module.exports = (options) => {
       }
       $(element).replaceWith(file);
     });
+
+    /* youtube */
+    $('iframe[src*="http://www.youtube.com"]').each((index, element) => {
+      youtube = true;
+      const src = $(element).attr('src');
+      const width = $(element).attr('width');
+      const height = $(element).attr('height');
+      const path = url.parse(src).pathname.split('/');
+      const ampYoutube = `
+      <amp-youtube
+        data-videoid="${path[path.length - 1]}"
+        width="${width}"
+        height="${height}"
+        layout="responsive">
+      </amp-youtube>`;
+      $(element).replaceWith(ampYoutube);
+    });
+
+    if (youtube) {
+      $('head').prepend('<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js">');
+    }
 
     /* amp tags */
     $(tags.amp.join(',')).each((index, element) => {
