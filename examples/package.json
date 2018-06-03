@@ -1,0 +1,19 @@
+{
+  "name": "postxml-app",
+  "version": "1.0.0",
+  "description": "PostXML App example",
+  "main": "postxml-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "rkazakov",
+    "email": "ruslan.kazakov@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "postxml": "^0.2.9",
+    "postxml-amp": "^0.2.6"
+  }
+}

@@ -10,7 +10,7 @@
 ## Installation
 
 ```sh
-npm install postxml-amp --save-dev
+npm install postxml-amp --save
 ```
 
 ## Usage
