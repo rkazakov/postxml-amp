@@ -3,6 +3,7 @@
 [![npm version][npm-image]][npm-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 [![Known Vulnerabilities](https://snyk.io/test/github/rkazakov/postxml-amp/badge.svg)](https://snyk.io/test/github/rkazakov/postxml-amp)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
 > [PostXML] plugin to convert plain HTML to Google Accelerated Mobile Pages (AMP).
 
@@ -20,13 +21,15 @@ npm install postxml-amp --save-dev
 
 ### cwd
 
-**Assets (images/styles) file path**
+### Assets (images/styles) file path
+
 - Type: `String`
 - Default: `''`
 
 ### round
 
-**Enable images dimensions rounding**
+### Enable images dimensions rounding
+
 - Type: `String`
 - Default: `true`
 
@@ -43,11 +46,11 @@ npm install postxml-amp --save-dev
 </html>
 ```
 
-###### image.png
+#### image.png
 
 [image.png](/test/image.png)
 
-###### style.css
+#### style.css
 
 ```css
 body {
