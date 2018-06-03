@@ -2,8 +2,11 @@
 
 [![npm version][npm-image]][npm-url]
 [![Downloads Stats][npm-downloads]][npm-url]
+
+[![Build Status](https://travis-ci.org/rkazakov/postxml-amp.svg?branch=master)](https://travis-ci.org/rkazakov/postxml-amp)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![Known Vulnerabilities](https://snyk.io/test/github/rkazakov/postxml-amp/badge.svg)](https://snyk.io/test/github/rkazakov/postxml-amp)
-[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![Greenkeeper badge](https://badges.greenkeeper.io/rkazakov/postxml-amp.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/rkazakov/postxml-amp.svg)](https://greenkeeper.io/)
 
 > [PostXML] plugin to convert plain HTML to Google Accelerated Mobile Pages (AMP).
 
