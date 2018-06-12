@@ -79,7 +79,7 @@ module.exports = (options) => {
     /* body */
 
     /* img dimensions */
-    $('img:not(width):not(height)').each((index, element) => {
+    $('img:not([width]):not([height])').each((index, element) => {
       const src = $(element).attr('src');
       if (!src) {
         return $(element).remove();
