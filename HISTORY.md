@@ -1,5 +1,8 @@
 # Release History
 
+* 0.4.0
+  * ADD: `amp-youtube` handles different versions of youtube links inclusing https
+  * BUG: images css selector
 * 0.3.0
   * ADD: `amp-youtube`
   * ADD: `amp-analytics` (Google Analytics)
