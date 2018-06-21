@@ -1,5 +1,7 @@
 # Release History
 
+* 0.4.2
+  * BUG: not properly handling self enclosed tags
 * 0.4.0
   * ADD: `amp-youtube` handles different versions of youtube links inclusing https
   * BUG: images css selector
