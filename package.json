@@ -37,7 +37,7 @@
   "homepage": "https://github.com/rkazakov/postxml-amp#readme",
   "dependencies": {
     "clean-css": "^4.1.11",
-    "image-size": "^0.6.2",
+    "image-size": "^0.7.3",
     "postxml": "^0.2.9",
     "request": "^2.87.0",
     "snyk": "^1.88.0"
