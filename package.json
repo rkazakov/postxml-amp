@@ -40,7 +40,7 @@
     "image-size": "^0.7.0",
     "postxml": "^0.2.9",
     "request": "^2.87.0",
-    "snyk": "^1.88.0"
+    "snyk": "^1.186.0"
   },
   "devDependencies": {
     "eslint": "^5.0.0",
