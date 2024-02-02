@@ -39,7 +39,7 @@
     "clean-css": "^4.1.11",
     "image-size": "^0.7.0",
     "postxml": "^0.2.9",
-    "request": "^2.87.0",
+    "request": "^2.88.2",
     "snyk": "^1.88.0"
   },
   "devDependencies": {
